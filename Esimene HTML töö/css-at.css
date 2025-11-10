@@ -1,0 +1,61 @@
+header {
+    background-color: #000000;
+    color: #fff;
+    padding: 15px 0;
+    text-align: center;
+}
+
+.logo {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+    text-transform: uppercase;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #ffd700; /* Change to your preferred hover color */
+}
+
+
+label {
+    display: block;
+    margin-bottom: 5px; /* Adjusted margin bottom */
+    font-weight: bold;
+    color: #eeeeee;
+}
+
+/* Input styles */
+input[type="text"] {
+    width: calc(25% - 10px); /* Adjusted width */
+    padding: 5px; /* Adjusted padding */
+    margin-bottom: 25px; /* Adjusted margin bottom */
+    border: 1px solid #ccc;
+    border-radius: 25px;
+    box-sizing: border-box;
+    font-size: 14px; /* Adjusted font size */
+}
+
+/* Placeholder styles */
+::placeholder {
+    color: #999; /* Light gray */
+}
+
+
+body {
+    color: white;
+  }
+
+ 

@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Teksti vormindamine</title>
+    <script>
+	$(document).ready(function(){
+    $("#navsiia").load("nav.html");
+    });
+	</script>
+    <style>
+	body{ padding-top:50px; padding-bottom:50px;}
+	.left200{position:relative;left:200px;}
+	</style>
+	<link href="styles/style1.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+ <div id="navsiia" class="m-3"></div>
+  <header>
+  <h1>Teksti vormindamine</h1>
+  </header>
+  <article>
+  <h2>Mõned üldised reeglid</h2>
+  <p> 
+  HTML5-s kasutame uue rea 
+  loomiseks elementi br, 
+  sest lihtne enter vajutus meid uuele reale ei vii<br>
+  Teine HTML5 iseärasus: mitmest järjestikusest tühikust jätab HTML5 alles         ühe<br>
+  Mitme järjestikuse tühiku saamiseks võib kasutada tühikule vastavat erisümboli nbsp <br>
+  mitu järjestikust &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; tühikut 
+  </p>
+  <p>
+  Vaba ehk enda soovitud paigutuse/disaini tegemiseks kasutatakse elementi pre:<br>
+  1. vaba paigutusega tekst ilma pre kasutamiseta:
+       yks 
+             kaks    
+			        kolm  
+   <br>
+  2. vaba paigutusega tekst pre kasutamisega:
+   <pre>
+         yks
+               kaks
+			            kolm
+	</pre>  
+  <br>
+  </p>
+  
+  </article>
+  
+  <article>
+  <h2>Stiilide rakendamine tekstile</h2>
+  <b>See tekst on bold</b><br>
+  <strong>see tekst on oluline, stiil strong</strong><br>
+  <i>See tekst on italic</i><br>
+  <em>See tekst on rõhutatud emphasized</em><br>
+  <small>See tekst on väiksem</small><br>
+  
+  </article>
+  <article>
+  <h2>Erisümbolid</h2>
+  <p>
+  Erisümbolid algavad & märgiga ja lõpevad semikooloniga, nende vahel on sümbolile vastav kood<br>
+  Näide: <br>
+  kood väiksem märgi jaoks on lt: &lt; <br>
+  kood suurem märgi jaoks on gt: &gt; <br>
+  Mõned eesti tähed : <br>
+  &auml; &uuml; &ouml; &Auml; &Uuml; &Ouml; &otilde; &Otilde;  
+  </p>
+  </article>
+  <article>
+  <h2>Ala- ja ülaindeksid</h2>
+  <p>
+  Einstein: E=mc<sup>2</sup><br>
+  Vesi: H<sub>2</sub>O<br>
+  </p>
+  </article>
+  <article>
+  <h2>Programmikood</h2>
+  <pre>
+  <p>
+  <code>
+  for(int i=1; i &lt; N; i++)
+  {
+  a=i+1;
+  b=3*i-1;
+  c=a+b;
+  }
+  </code>
+  </p>
+  </pre>
+  
+  </article>
+  
+  <article>
+  <h2>SPAN ja DIV elementide kasutamine</h2>
+  <p>
+  SPAN ja DIV elemente kasutatakse AINULT! markeerimiseks-märkimiseks.<br>
+  SPAN elemendi abil märgi mingi osa reast  ja DIV elemendi abil suurema bloki.<br>
+  Nende elementide lisamine veebilehele otseselt lehte ei muuda, kuid neid kasutatakse
+  stiilide lisamiseks<br>
+  Näited: <br>
+  Programmi koodis on <span class="punane">viga</span> mis tuleb 
+  <span class="punane">kiiresti </span>parandada!<br>
+  <div class="left200">
+    Tekst enne pilti<br>
+    <img src="media/drell.jpg" style="width:700px;" alt="Drell-korvpall" class="img-fluid" /><br>
+    Tekst pärast pilti<br>
+  </div> 
+ 
+  </p>
+  <br>
+  
+  
+  </article>
+  
+  
+  
+  
+  <footer class="fixed-bottom">
+  &copy; Copyright. Wolf. All rigths reserved.<br>
+  Tallinn, Suur-Sõjamäe 10
+  </footer>
+  </body>
+</html>

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $("#nav").load("navbar.html");
+    });
+	</script>
+	<style>
+	body{padding-top:50px; padding-bottom:50px; }
+	.left200{position:relative; left:200px;}
+	</style>
+	<link href="styles/style1.css" rel="stylesheet" />
+    <title>Text Formatting</title>
+  </head>
+  
+  <body>
+  <div id="nav" class="m-3"></div> 
+  <header><h1>Text Formatting</h1></header>
+  
+  <article>
+  <h2>Geral rules</h2>
+  <p>
+  HTML5 has same general features:<br>
+  Pressing enter does not lead to new row, to get new row we need to use element br.<br>
+  Second interesting feature is that sequential spaces will be reduced to 1 space.
+  In order to get several sequantial spaces, you can use special characted nbsp<br>
+  Sample: one &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;two <br> 
+  </p>
+  <p>
+   In order keep your own design use pre element.<br>
+   1. Free text without using pre element: <br>
+    one 
+	        two
+			         three
+  
+   <br>
+   2. Free text with using pre element: <br>
+   </p>
+   <pre><p>
+    one 
+	        two
+			         three
+   </p></pre>
+  </article>
+  <article>
+ 
+  <h2>Applying styles to text</h2>
+  <p>
+  <b>This text is bold</b><br>
+  <strong>This text is important!</strong></br>
+  <i>This text is italic</i></br>
+  <em>This text is emphasized</em></br>
+  <small>This is some smaller text.</small></br>
+  </p>
+  </article>
+  <article>
+  <h2>Speciasl characters</h2>
+  <p>
+  Special characters start with & sign and end with semicolon,
+  between start and end is code of teh special character.<br>
+  Saples:<br>
+  code for less than sign is lt i.e. &lt; <br>
+  code for greater than sign is gt i.e. &gt; <br>
+  code for estonian ä letter is auml i.e. &auml; <br>
+  </p>
+  </article>
+  
+  <article>
+  <h2>Upper and lower indexes</h2>
+  <p>
+  Einstein: E=mc<sup>2</sup><br>
+  Water: H<sub>2</sub>O
+  </p> 
+  </article>
+  
+  <article>
+  <h2>Programming code</h2>
+  <pre>
+  <p>
+  <code>
+  for(int i=1; i &lt; N; i++)
+  {
+  a=i+9;
+  b=4*i+1;
+  }
+  </code>
+  </p>
+  </pre>
+  </article>
+  
+  <article>
+  <h2>Using SPAN and DIV elements</h2>
+  <p>
+  Elements SPAN and DIV are used for markup ONLY!.<br>
+  Thus adding these elements will not make any direct change to web page.<br> 
+  These element help to catch requied part of row (SPAN) or part of webpage (DIV).<br>
+  Samples:<br>
+  Tomorrow is <span class="error" style="font-size:large">important meeting</span>, do not miss it!<br>
+  <br>
+  <div class="left200">
+  Text before image.<br>
+  <img src="media/trafic.jpg" alt="Trafic" style="width:800px" class="img-fluid"/><br>
+  Text after image.<br>
+  </div>
+  
+  
+  </p>
+  
+  
+  </article>
+  
+  
+  
+  
+  
+  <footer class="fixed-bottom">
+  &copy; Copyright. Fox. All rights reserved.<br>
+  Tallinn, Suur-Sõjamäe 10A
+  </footer>
+  
+  </body>
+</html>

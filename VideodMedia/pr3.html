@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $("#nav").load("navbar.html");
+    });
+	</script>
+	<style>
+	body{padding-top:50px; padding-bottom:50px; }
+	.container{position:relative; text-align:center;}
+	.toCentrOfImage{position:absolute; top:50%; left:50%; transform:translate(-50%,-50%);}
+	.top-left{position:absolute; top:5px;left:30px;}
+	.top-right{position:absolute; top:5px;right:30px;}
+	</style>
+	<link href="styles/style1.css" rel="stylesheet" />
+    <title>Tables, Images, Objects</title>
+  </head>
+  
+  <body>
+  <div id="nav" class="m-3"></div> 
+  <header><h1>Tables, Images, Objects</h1></header>
+  <section>
+  <h2>Tables</h2>
+  <article>
+  <h3>Simple Table</h3>
+  <table  class="table table-striped table-hover" style="width:300px;">
+  <caption>Grades</caption> 
+    <tr>
+       <th>Name</th>
+       <th>HTML5</th>
+       <th>SQL</th>
+       <th>PhP</th>
+       <th>OOP</th>
+   </tr>
+  
+    <tr>
+       <td class="left">John</td>
+       <td>4</td>
+       <td>3</td>
+       <td>4</td>
+       <td>5</td>
+   </tr> 
+  
+  <tr>
+       <td class="left">Kelly</td>
+       <td>5</td>
+       <td>4</td>
+       <td>4</td>
+       <td>5</td>
+   </tr> 
+  
+  <tr>
+       <td class="left">Angelina</td>
+       <td>5</td>
+       <td>5</td>
+       <td>4</td>
+       <td>4</td>
+   </tr> 
+  
+  </table>
+
+  </article>
+<article>
+<h3>Using colspan and rowspan</h3>
+<table style="background-color:#39FFEF; width:500px; margin:auto" class="table table-striped">
+<caption>Basketball Euroleague</caption>
+<tr>
+<th rowspan="2" style="vertical-align:middle" >Team </th>
+<th colspan="2">Throws</th>
+<th rowspan="2" style="vertical-align:middle">Free throws</th>
+</tr>
+<tr>
+<th>3 point </th>
+<th>2 point</th>
+</tr>
+  
+<tr>
+<td class="left">Barcelona </td>
+<td>33</td>
+<td>41</td>
+<td>88</td>
+</tr>
+
+<tr>
+<td class="left">Olympiacos </td>
+<td>31</td>
+<td>40</td>
+<td>92</td>
+</tr>
+
+<tr>
+<td class="left">Zalgiris</td>
+<td>32</td>
+<td>42</td>
+<td>91</td>
+</tr>
+<tr>
+
+<td class="left">Real</td>
+<td>29</td>
+<td>44</td>
+<td>92</td>
+</tr>
+</table>
+</article>  
+<article>
+<h3>Using row and column groups</h3>
+<p>NB: column goups should be introduced first</p>
+
+<table style="margin:auto">
+<caption>Marathon</caption>
+<colgroup>
+<col style="width:80px"></col>
+<col style="width:160px"></col>
+<col style="width:80px"></col>
+</colgroup>
+<thead style="background-color:#8BBCFF">
+<tr>
+<th>State</th>
+<th>Fullname</th>
+<th>Result</th>
+</tr>
+</thead>
+<tbody style="background-color:#FF8D93">
+<tr>
+<th colspan="3">Women</th>
+</tr>
+<tr>
+<td class="left">Kenia</td>
+<td>Adele Atikoplu</td>
+<td>4.30.23</td>
+</tr>
+<tr>
+<td class="left">Etiopia</td>
+<td>Selene Kiptaker</td>
+<td>4.35.53</td>
+</tr>
+<tr>
+<td class="left">Jamaica</td>
+<td>Temela Tembiko</td>
+<td>4.54.41</td>
+</tr>
+</tbody>
+
+<tbody style="background-color:#9DFFD8">
+<tr>
+<th colspan="3">Men</th>
+</tr>
+<tr>
+<td class="left">Kenia</td>
+<td>John Jonetple</td>
+<td>3.23.41</td>
+</tr>
+<tr>
+<td class="left">Etiopia</td>
+<td>Kebel Karele</td>
+<td>3.24.12</td>
+</tr>
+<tr>
+<td class="left">Jamaica</td>
+<td>Jimmy Tokanu</td>
+<td>3.22.33</td>
+</tr>
+</tbody>
+<tfoot style="background-color:#6DFFFB">
+<tr>
+<td colspan="2">Women limit time</td>
+<td>5.00.00</td>
+</tr>
+<tr>
+<td colspan="2">Men limit time</td>
+<td>4.00.00</td>
+</tr>
+</tfoot>
+
+</table>
+<br>
+
+
+
+
+
+</article>
+<br>
+  </section>
+  <section>
+  <h2>Images</h2>
+  <article>
+  <h3>Text on Image</h3>
+  
+  <div class="container">
+  <figure class="center">
+  <img src="media/turbine.webp" alt="turbine" style="width:100%" class="img-fluid" />
+  <figcaption>Wind power is almost clean</figcaption>
+  <span class="toCentrOfImage" style="color:red; font-size:35px; font-weight:600;">Wind power is effective</span>
+  <span class="top-left">Top left</span>
+  <span class="top-right">Top right</span>
+  </figure>
+  </div>
+ 
+  </article>
+  
+ <article>
+ <h3>Text aside picture</h3>
+ <img src="media/atkinson.jpg" alt="Rowan Atkinson" style="width:400px; float:left; margin-right:15px" />
+ <b>Rowan Sebastion Atkinson</b>
+ CBE (born 6 January 1955) is an English actor, comedian and writer. He played the title roles in 
+ the sitcoms Blackadder (1983–1989) and Mr. Bean (1990–1995), and in the film series Johnny English 
+ (2003–2018). Atkinson first came to prominence on the BBC sketch comedy show Not the Nine O'Clock 
+ News (1979–1982), receiving the 1981 British Academy Television Award for Best Entertainment 
+ Performance.
+Atkinson has appeared in various films, including the James Bond film Never Say Never Again (1983), 
+The Witches (1990), Four Weddings and a Funeral (1994), Rat Race (2002), Scooby-Doo (2002),
+ Love Actually (2003), and Wonka (2023). He played the voice role of Zazu in the Disney animated film 
+ The Lion King (1994). Atkinson portrayed Mr. Bean in the film adaptations Bean (1997) and Mr. Bean's
+  Holiday (2007). He also featured on the BBC sitcom The Thin Blue Line (1995–1996) and played the 
+  titular character in ITV's Maigret (2016–2017). His work in theatre includes the role of Fagin in
+   the 2009 West End revival of the musical Oliver!.
+Atkinson was listed in The Observer as one of the 50 funniest actors in British comedy in 2003,[3] 
+and among the top 50 comedians ever, in a 2005 poll of fellow comedians.[4] Throughout his career, 
+he has collaborated with screenwriter Richard Curtis and composer Howard Goodall, both of whom he 
+met at the Oxford University Dramatic Society during the 1970s. In addition to his 1981 BAFTA, 
+Atkinson received an Olivier Award for his 1981 West End theatre performance in Rowan Atkinson in 
+Revue. Atkinson was appointed CBE in the 2013 Birthday Honours for services to drama and charity.
+
+ Atkinson was born in Consett, County Durham, England, on 6 January 1955.[5][6][7] The youngest of 
+ four boys, his parents were Eric Atkinson, a farmer and company director, and Ella May 
+ (née Bainbridge), who married on 29 June 1945.[7] His three older brothers are Paul, who died as
+  an infant; Rodney, a Eurosceptic economist who narrowly lost the UK Independence Party leadership 
+  election in 2000; and Rupert.[8][9]
+Atkinson was brought up Anglican,[10] and was educated at the Durham Chorister School, a preparatory
+ school, and then at St Bees School. Rodney, Rowan and their older brother Rupert were brought up in
+  Consett and went to school with the future Prime Minister, Tony Blair, at Durham Choristers.[11] 
+  After receiving top grades in science A levels,[12] he secured a place at Newcastle University, 
+  where he received a BSc degree in Electrical and Electronic Engineering in 1975.[13][14] 
+  He subsequently obtained an MSc degree in
+ Electrical Engineering at The Queen's College, Oxford in 1975, the same college where his father 
+ matriculated in 1935,[15] and which made Atkinson an Honorary Fellow in 2006.[16] His master's 
+ thesis, published in 1978, considered the application of self-tuning control.[17]
+Atkinson briefly embarked on a PhD study before devoting his full attention to acting.[18] First 
+winning national attention in The Oxford Revue at the Edinburgh Festival Fringe in August 1976,[13]
+ he had already written and performed sketches for shows in Oxford by the Etceteras – the revue group
+  of the Experimental Theatre Club (ETC) – and for the Oxford University Dramatic Society (OUDS),
+   meeting writer Richard Curtis,[13] and composer Howard Goodall, with whom he would continue to
+    collaborate during his career.[19] 
+	
+<span style="display:block; clear:both;"></span>
+This text is located after picture i.e two column layout is replaced with one column layout
+ </article> 
+  
+  <article>
+  <h3>Small image as link to big image</h3>
+  <div class="center">
+  <a href="media/elefant.jpg" target="_blank">
+    <img src="media/elefant.jpg" alt="Elefant" style="width:100px" />
+  </a>
+  </div>
+ </article>
+ 
+  <article>
+ <h3>Open Image in Window</h3>
+  <div class="center">
+  <img src="media/elefant.jpg" alt="Elefant" style="width:100px" 
+  onclick="window.open('media/elefant.jpg','_blank',
+  'location=yes,height=600,width=600,left=100,top=100,status=yes')"/>
+  </div>
+  
+  </article>
+  <article>
+  <h3>Bootsrap Tools for Images</h3>
+    <div class="center" style="background-color: #F1F7FF">
+  <img src="media/atkinson.jpg" alt="Atkinson" style="width:200px" class="rounded"  /> &nbsp;&nbsp;
+  <img src="media/atkinson.jpg" alt="Atkinson" style="width:200px" class="rounded-circle"  /> &nbsp;&nbsp;
+  <img src="media/atkinson.jpg" alt="Atkinson" style="width:200px" class="img-thumbnail"  /> &nbsp;&nbsp;
+  </div>
+  </article>
+  </section>
+  <section>
+  <h2>Objects, Map, Area</h2>
+  <article>
+  
+  <h3>Objects</h3>
+  Firts an attempt is made to execute mot outer object, if not accessible, then next.....
+  <div class="center">
+  <object data="media/notExisting.jpg"  type="image/jpg" style="width:400px">
+         <object data="media/AlsoNotExisting.jpg"  type="image/jpg" style="width:400px">
+                <object data="media/elefant.jpg"  type="image/jpg" style="width:400px">
+				</object>
+         </object>
+  </object>
+  </div>
+  </article>
+  <article>
+  <h3>Image map</h3>
+  <img src="media/workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+  
+  
+  </article>
+  
+  </section>
+  
+  
+  
+  
+  <footer class="fixed-bottom">
+  &copy; Copyright. Fox. All rights reserved.<br>
+  Tallinn, Suur-Sõjamäe 10A
+  </footer>
+  
+  </body>
+</html>

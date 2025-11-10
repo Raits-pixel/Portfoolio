@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+	<script>
+	$(document).ready(function(){
+    $("#nav").load("navbar.html");
+    });
+	</script>
+	<style>
+	 
+	
+	body{padding-top:50px; padding-bottom:50px; }
+	</style>
+	<link href="styles/style1.css" rel="stylesheet" />
+    <title>Lists and Links</title>
+  </head>
+  
+  <body>
+  <div id="nav" class="m-3"></div> 
+  <header><h1>Lists and Links</h1></header>
+  <section>
+  <h2>Lists</h2>
+  <article>
+  <a name="ul"></a>
+  <a href="#bt">Bootstrap tools</a><br>
+  <h3>Unordered lists</h3>
+  
+  Cats:<br>
+  <ul>
+  <li>Miisu</li>
+  <li>Kot</li>
+  <li>Mäu</li>
+  <li>Tom</li>
+  </ul>
+  <p>Using attribute type differnt symbols(disc, circle, square) can be introduced before list item</p>
+  Cats: type value circle is used<br>
+  <ul type="circle">
+  <li>Miisu</li>
+  <li>Kot</li>
+  <li>Mäu</li>
+  <li>Tom</li>
+  </ul>
+  
+  Cats: type value square is used<br>
+  <ul type="square">
+  <li>Miisu</li>
+  <li>Kot</li>
+  <li>Mäu</li>
+  <li>Tom</li>
+  </ul>
+  </article>
+  <article>
+  <a name="ol"></a>
+  <h3>Ordered Lists</h3>
+  
+  WRC:<br>
+  <ol>
+  <li>Tänak</li>
+  <li>Ogier</li>
+  <li>Rovanperä</li>
+  <li>Loeb</li>
+  <li>Neuville</li>
+  </ol>
+  <p>Using attribute type, the rome numbering(I,i) or latin letter (A,a) will be used</p>
+ 
+  WRC:<br>
+  <ol type="I">
+  <li>Tänak</li>
+  <li>Ogier</li>
+  <li>Rovanperä</li>
+  <li>Loeb</li>
+  <li>Neuville</li>
+  </ol>
+  
+  WRC:<br>
+  <ol type="A">
+  <li>Tänak</li>
+  <li>Ogier</li>
+  <li>Rovanperä</li>
+  <li>Loeb</li>
+  <li>Neuville</li>
+  </ol>
+ 
+  <p>Using list item attribute value one can used user specified value</p> 
+  WRC:<br>
+  <ol>
+  <li>Tänak</li>
+  <li>Ogier</li>
+  <li>Rovanperä</li>
+  <li value="5">Neuville</li>
+  <li>Sunninen</li>
+  </ol>
+  
+  </article> 
+  <article>
+  <a name="hl"></a>
+  <h3>Hierarchical/multilevel lists</h3>
+  Cars<br>
+  <ul>
+  <li>Fossil</li>
+      <ul>
+	  <li>Mercedes</li>
+	  <li>Audi</li>
+	      <ul>
+		  <li>A4</li>
+		  <li>A6</li>
+		  <li>A8</li>
+		  </ul> 
+	  <li>Ford</li>
+	  </ul> 
+  <li>Hybrid</li>
+      <ul>
+	  <li>Toyota</li>
+	      <ul>
+		  <li>Prius</li>
+		  <li>Rav4</li>
+		  <li>Corolla</li>
+		  </ul> 
+	  <li>Hunday</li>
+	  <li>Volvo</li>
+	  </ul> 
+  <li>Electric</li>
+       <ul>
+	   <li>Tesla</li>
+	       <ul>
+		   <li>Model S</li>
+		   <li>Model 3</li>
+		   <li>Model X</li>
+		   <li>Model Y</li>
+		   </ul> 
+	   <li>Byd</li>
+	   <li>Nissan</li>
+	   </ul>
+  </ul>
+ 
+  </article>
+  <article>
+ <a name="dl"></a>
+  <h3>Definition Lists</h3>
+  <dl>
+  <dt>Term</dt>
+  <dd>Explanation of the term</dd>
+  <dt>HTML5</dt>
+  <dd>Hypertext, used for web development </dd>
+  <dt>OOP</dt>
+  <dd>Object oriented programming</dd>
+  <dt>Php</dt>
+  <dd>Scripting Languge for back end development</dd>
+  </dl>
+  </article>
+  
+  <article>
+  <a name="bt">
+  <h3>Bootstarp tools for lists</h3></a>
+  Inline List: 
+  <ul class="list-inline">
+  <li class="list-inline-item">Cofee</li>
+  <li class="list-inline-item">Tea</li>
+  <li class="list-inline-item">Water</li>  
+  </ul>
+  
+  Horizontal definition list
+  <dl class="row">
+  <dt class="col-sm-1">Term</dt>
+  <dd class="col-sm-11">Explanation of the term</dd>
+  <dt class="col-sm-1">HTML5</dt>
+  <dd class="col-sm-11">Hypertext, used for web development </dd>
+  <dt class="col-sm-1">OOP</dt>
+  <dd class="col-sm-11">Object oriented programming</dd>
+  <dt class="col-sm-1">Php</dt>
+  <dd class="col-sm-11">Scripting Languge for back end development</dd>
+  </dl>  
+  </article>  
+  </section>
+  
+  
+  <section>
+  <h2>Links</h2>
+  <article>
+  <h3>Links using absolute address</h3>
+  Links wothout filename (just directory), index fiel executed if exists &nbsp;
+  <a href="https://www.eek.ee/">EEK Mainor</a> <br>
+  Link to beginning of file &nbsp;<a href="https://www.w3schools.com/html/html_links.asp">W3 School</a><br>
+  Link to given location in file (using anchor) &nbsp; 
+  <a href="https://www.w3.org/TR/html4/struct/links.html#h-12.2">W3 org Links</a><br>
+  </article>
+  <article>
+  <h3>Links using relative address</h3>
+  Link to the beginning of the file &nbsp; <a href="#">To beginning of file</a><br>
+  Link to fixed location in file &nbsp; <a href="#ul">Unordered lists</a><br>
+  Link to fixed location in file &nbsp; <a href="#ol">Ordered lists</a><br>
+  Link to fixed location in file &nbsp; <a href="#hl">Hierarcical lists</a><br>
+  Link to fixed location in file &nbsp; <a href="#dl">Definition lists</a><br>
+ 
+  Link to the file (beginning) in same folder &nbsp; <a href="pr1.html">Text formatting</a><br>
+  Link to file file1books in subfolder books &nbsp; <a href="books/file1books.html">file1books.html</a><br>
+  
+ Link to file file1movies in subfolder movies &nbsp; <a href="movies/file1movies.html">file1movies.html</a><br>
+ 
+Link to file file1bookschildren in subfolder books/children &nbsp; 
+<a href="books/children/file1bookschildren.html">file1bookschildren.html</a><br>
+ 
+  </article>
+  
+  
+  
+  
+  </section>
+  
+  
+  <footer class="fixed-bottom">
+  &copy; Copyright. Fox. All rights reserved.<br>
+  Tallinn, Suur-Sõjamäe 10A
+  </footer>
+  
+  </body>
+</html>

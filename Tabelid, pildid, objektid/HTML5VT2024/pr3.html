@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta charset="utf-8">
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script> 
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <title>Tabelid, pildid, objektid</title>
+    <script>
+	$(document).ready(function(){
+    $("#navsiia").load("nav.html");
+    });
+	</script>
+    <style>
+	body{ padding-top:50px; padding-bottom:50px;}
+	.container{position:relative; text-align:center;}
+	.pildiKeskele{position:absolute;top:50%;left:50%;transform:translate(-50%,-50%); }
+	.vasakYlemine{position:absolute; top:5px; left:30px; color:white;}
+	.paremYlemine{position:absolute; top:5px; right:30px;color:white;}
+	</style>
+	<link href="styles/style1.css" rel="stylesheet" />
+  </head>
+  
+  <body>
+ <div id="navsiia" class="m-3"></div>
+  <header>
+  <h1>Tabelid, pildid, objektid</h1>
+  </header>
+  <section>
+  <h2>Tabelid</h2>
+  <article>
+  <h3>Lihtne tabel</h3>
+  <table class="table table-striped table-hover" style="width:300px" >
+  <caption>Hinded</caption>
+    <tr>
+	   <th></th>
+       <th>HTML5</th>
+       <th>SQL</th>
+       <th>OOP</th>
+       <th>PhP</th>
+   </tr>
+   
+      <tr>
+	  <td class="left">Jonathan</td>
+       <td>5</td>
+       <td>4</td>
+       <td>4</td>
+       <td>3</td>
+   </tr>
+
+      <tr>
+	   <td class="left">Lisa</td>
+       <td>4</td>
+       <td>5</td>
+       <td>4</td>
+       <td>5</td>
+     </tr>
+
+      <tr>
+	   <td class="left">Ken</td>
+       <td>3</td>
+       <td>4</td>
+       <td>3</td>
+       <td>5</td>
+   </tr>
+  
+  
+  </table>
+  
+  
+  </article>
+  <article>
+  <h3>rowspan ja colspan rakendamine</h3>
+  <table class="table table-striped table-hover" style="margin:auto; background-color:#B6FFFF; width:500px" >
+  <caption>Korvpall</caption>
+    <tr>
+	   <th rowspan="2" style="vertical-align:middle">Võistkond</th>
+       <th colspan="2">Visked</th>
+       <th rowspan="2" style="vertical-align:middle">Vabavisked</th>   
+   </tr>
+   
+<tr>
+	   <th>3 punkti</th>
+       <th>2 punkti</th>
+   </tr>
+
+   <tr>
+	   <td class="left">Barcelona</td>
+       <td>35</td>
+       <td>45</td>
+       <td>85</td>
+   </tr>
+
+    <tr>
+	   <td class="left">Olympiacos</td>
+       <td>33</td>
+       <td>46</td>
+       <td>89</td>
+   </tr>
+
+   
+    <tr>
+	   <td class="left">Zalgiris</td>
+       <td>37</td>
+       <td>47</td>
+       <td>88</td>
+   </tr>
+
+   <tr>
+	   <td class="left">Real</td>
+       <td>38</td>
+       <td>43</td>
+       <td>91</td>
+   </tr>
+     
+  </table>
+  
+  
+  </article>
+  
+<br>
+  <article>
+  
+  <h3>Ridade ja veergude gruppide kasutamine</h3>
+  <p>NB: Veergude grupid tehaks enne ridade gruppe</p>
+  
+
+  <table style="margin:auto">
+  <caption>Maraton</caption>
+  <colgroup>
+  <col style="width:80px"></col>
+  <col style="width:160px"></col>
+  <col style="width:80px"></col>
+  </colgroup>
+  <thead style="background-color:#FAFFC1">
+   <tr>
+	   <th class="left">Riik</th>
+       <th>Nimi</th>
+       <th>Tulemus</th>
+   </tr>
+  </thead>
+  <tbody style="background-color:#CDF5FF">
+   <tr>
+	   <th colspan="3">Naised</th>       
+   </tr>
+  <tr>
+	   <td class="left">Etioopia</td>
+       <td>Ly Kipteker</td>
+       <td>3.44.55</td>
+   </tr>
+  
+  <tr>
+	   <td class="left">Keenia</td>
+       <td>Heline Ateepe</td>
+       <td>3.47.35</td>
+   </tr>
+   
+   <tr>
+	   <td class="left">Jaapan</td>
+       <td>Kiteke  Kato</td>
+       <td>3.33.22</td>
+   </tr>
+
+  
+  </tbody>
+  
+  <tbody style="background-color:#C3FFCA">
+   <tr>
+	   <th colspan="3">Mehed</th>       
+   </tr>
+  <tr>
+	   <td class="left">Etioopia</td>
+       <td>John Kaptikuu</td>
+       <td>2.56.51</td>
+   </tr>
+  
+  <tr>
+	   <td class="left">Keenia</td>
+       <td>Jim Jikatker</td>
+       <td>2.34.55</td>
+   </tr>
+   
+   <tr>
+	   <td class="left">Jaapan</td>
+       <td>Takete Sato</td>
+       <td>2.31.28</td>
+   </tr>  
+  </tbody>
+  <tfoot style="background-color:#E1D4FF">
+  <tr>
+	   <td class="left" colspan="2">Naiste ajalimiit</td>
+       <td>5.00.00</td>
+   </tr>  
+   <tr>
+	   <td class="left" colspan="2">Meeste ajalimiit</td>
+       <td>4.00.00</td>
+   </tr>  
+  
+  </tfoot>
+  </table>
+
+ 
+  </article> 
+  </section>
+  <section>
+  <h2>Pildid</h2>
+  <article>
+  <h3>Teksti lisamine pildile</h3>
+  
+  <div class="container">
+  <figure class="center">
+  <img src="media/tuulik.jpg" alt="Tuulik" class="img-fluid" style="100%">
+   <figcaption>Tuuleenergia</figcaption>
+  <span class="pildiKeskele" style="color:white; font-size:30px; font-weight:400;" >
+    Tuuleenrgia on efektiivne</span>
+  <span class="vasakYlemine">Vasak</span>
+  <span class="paremYlemine">Parem</span>
+  </figure>
+  
+  </div>
+  <br>
+  </article>
+  <article>
+  <h3>Teksti paigutamine pildi kõrvale</h3>
+  <img src="media/chaplin.jpg" alt="Chaplin" style ="width:400px; float:left; margin-right:15px;" />
+  <b>Charlie Chaplin</b>
+  USA-sse jõudis ta esimest korda 1910 impressaario Fred Kamo trupiga, mis koosnes noortest koomikutest. Kamot on nimetatud tordiga-näkku-nalja leiutajaks. 1912 naasis trupp Inglismaale, aga juba viis kuud hiljem oktoobris sõitis teisele ringreisile USA-sse ja 1913. aasta lõpul lahkus trupist, et hakata filminäitlejaks koomilistes lühifilmides.
+
+Chaplin töötas kiiresti välja Hulkuri, tegelaskuju, keda ta paljudes filmides mängis. Sellega saabus kiiresti Chaplini ülemaailmne kuulsus.
+
+Chaplin polnud rahul töötamisega teiste käe all. Ta tundis, et ei saa teha niisuguseid filme, nagu talle meeldib. Koos teiste sama probleemi käes olevate näitlejatega, nimelt David Griffithi, Douglas Fairbanksi ja Mary Pickfordiga asutas ta filmistuudio United Artists. See osutus äriliselt üsna edukaks ja tagas Chaplini vabaduse filmide tootmisel. Chaplin töötas United Artistsi juhatuses kuni 1950. aastate alguseni.
+
+United Artistsis tehtud filmid muutusid varasematega võrreldes pikemaks ja harvemaks: enne valmis igal aastal palju filme, nüüd tuli üks film mitme aasta kohta. Kuid just nende filmide põhjal ongi Chaplin tänapäeval kõige tuntum: "Kullapalavik" (1925), "Tsirkus" (1928), "Suurlinna tuled" (1931), "Moodsad ajad" (1936) ja "Suur diktaator" (1940).
+
+Helifilmi tulekuga ei läinud Chaplin kohe kaasa, erinevalt näiteks Walt Disneyst. Ka värvifilmiga ei läinud Chaplin kaua aega kaasa, erinevalt Disneyst. Chaplin tundis, et vaatajad ei võta Hulkurit enam omaks, kui see rääkima hakkab. Viimane film Hulkuriga peaosas, "Suurlinna tuled", valmis 1936 ja see oli endiselt tummfilm, kuigi Chaplin lisas sellele enda kirjutatud taustamuusika.
+  
+  <span style="display:block; clear:both;"></span> See tekst pauigutatakse pildi järele
+   <br>
+  </article>
+  
+  
+  <br>
+  
+  </section>
+  
+  
+  
+  <footer class="fixed-bottom">
+  &copy; Copyright. Wolf. All rigths reserved.<br>
+  Tallinn, Suur-Sõjamäe 10
+  </footer>
+  </body>
+</html>

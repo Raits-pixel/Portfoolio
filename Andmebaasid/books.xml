@@ -1,0 +1,69 @@
+<bookstore>
+<book category="cooking">
+<title lang="en">Everyday Italian</title>
+<publisher>Elsevier</publisher>
+<author>Giada De Laurentiis</author>
+<year>2005</year>
+<price>30.00</price>
+</book>
+<book category="children">
+<title lang="en">Harry Potter</title>
+<publisher>Springer</publisher>
+<author>J K. Rowling</author>
+<year>2005</year>
+<price>29.99</price>
+</book>
+<book category="web">
+<title lang="en">XQuery Kick Start</title>
+<publisher>O Reyly</publisher>
+<author>James McGovern</author>
+<author>Per Bothner</author>
+<author>Kurt Cagle</author>
+<author>James Linn</author>
+<author>Vaidyanathan Nagarajan</author>
+<year>2003</year>
+<price>49.99</price>
+</book>
+<book category="web" cover="paperback">
+<title lang="en">Learning XML</title>
+<publisher>Wiley</publisher>
+<author>Erik T. Ray</author>
+<year>2003</year>
+<price>39.95</price>
+</book>
+<book category="web" cover="paperback">
+<title lang="en">Learning XML</title>
+<publisher>Wiley</publisher>
+<author>Erik T. Ray</author>
+<year>2003</year>
+<price>33.75</price>
+</book>
+<book category="web" cover="paperback">
+<title lang="en">Learning XML</title>
+<publisher>Wiley</publisher>
+<author>Erik T. Ray</author>
+<year>2003</year>
+<price>32.15</price>
+</book>
+<book category="comedy" cover="paperback">
+<title lang="et">Talve</title>
+<publisher>Valgus</publisher>
+<author>Oskar Luts</author>
+<year>2018</year>
+<price>29.45</price>
+</book>
+<book category="comedy" cover="paperback">
+<title lang="et">Kevade</title>
+<publisher>Valgus</publisher>
+<author>Oskar Luts</author>
+<year>2009</year>
+<price>38.12</price>
+</book>
+<book category="serious" cover="paperback">
+<title lang="et">Tõde ja Õigus</title>
+<publisher>Eesti Raamat</publisher>
+<author>Anton H. Tammsaare</author>
+<year>2014</year>
+<price>73.44</price>
+</book>
+</bookstore>

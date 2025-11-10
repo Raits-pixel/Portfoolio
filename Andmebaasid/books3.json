@@ -1,0 +1,47 @@
+{ "BookList": [
+  {
+     "Title": "jQuery: Novice to Ninja",
+     "Publisher": "Site point",
+     "Price": 20,
+     "Year": 2015,
+     "Authors":[
+      {"Name":"Ninja","Age":35,"Sex":"M" },
+      {"Name":"Jonson","Age":31,"Sex":"M" },
+      {"Name":"Swenson","Age":44,"Sex":"W" }
+     ]
+    },
+  {
+    "Title": "Learning jQuery",
+    "Publisher": "PACKT",
+    "Price": 8,
+    "Year": 2012,
+    "Authors":[
+        {"Name":"Jakson","Age":22,"Sex":"M" },
+        {"Name":"Laite","Age":26,"Sex":"M" },
+        {"Name":"Stern","Age":54,"Sex":"W" }
+       ]
+  },
+  {
+    "Title": "Head First jQuery",
+    "Publisher": "O'Reilly",
+    "Price": 9,
+    "Year": 2010,
+    "Authors":[
+        {"Name":"Jazz","Age":33,"Sex":"W" },
+        {"Name":"Fox","Age":25,"Sex":"W" }
+       
+       ]
+  },
+  {
+    "Title": "jQuery UI 1.8",
+    "Publisher": "PACKT",
+    "Price": 11,
+    "Year": 2017,
+    "Authors":[
+        {"Name":"Laap","Age":46,"Sex":"M" },
+        {"Name":"Jaap","Age":53,"Sex":"W" },
+        {"Name":"Staap","Age":50,"Sex":"M" },
+        {"Name":"Kraav","Age":54,"Sex":"W" }
+       ]
+  }
+]}

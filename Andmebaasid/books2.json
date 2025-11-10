@@ -1,0 +1,30 @@
+{ "BookList": [
+  {
+     "Title": "jQuery: Novice to Ninja",
+     "Publisher": "Site point",
+     "Price": 20,
+     "Year": 2015,
+     "Author": {"Name":"Ninja","Age":35,"Sex":"M" }
+  },
+  {
+    "Title": "Learning jQuery",
+    "Publisher": "PACKT",
+    "Price": 8,
+    "Year": 2012,
+    "Author": {"Name":"Minja","Age":38,"Sex":"W" }
+  },
+  {
+    "Title": "Head First jQuery",
+    "Publisher": "O'Reilly",
+    "Price": 9,
+    "Year": 2010,
+    "Author": {"Name":"Tinja","Age":44,"Sex":"M" }
+  },
+  {
+    "Title": "jQuery UI 1.8",
+    "Publisher": "PACKT",
+    "Price": 11,
+    "Year": 2017,
+    "Author": {"Name":"Hinja","Age":22,"Sex":"W"}
+  }
+]}

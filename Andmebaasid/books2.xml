@@ -1,0 +1,108 @@
+<bookstore>
+<book category="cooking">
+<title lang="en">Everyday Italian</title>
+<publisher>Elsevier</publisher>
+<author>
+<fname>Giada</fname>
+<lname>De Laurentiis</lname>
+</author>
+<year>2005</year>
+<price>30.00</price>
+</book>
+<book category="children">
+<title lang="en">Harry Potter</title>
+<publisher>Springer</publisher>
+<author>
+<fname>J K.</fname>
+<lname> Rowling</lname>
+</author>
+<year>2005</year>
+<price>29.99</price>
+</book>
+<book category="web">
+<title lang="en">XQuery Kick Start</title>
+<publisher>O Reyly</publisher>
+<author>
+<fname>James</fname>
+<lname>McGovern</lname>
+</author>
+<author>
+<fname>Per</fname>
+<lname>Bothner</lname>
+</author>
+<author>
+<fname>Kurt</fname>
+<lname>Cagle</lname>
+</author>
+<author>
+<fname>James</fname>
+<lname>Linn</lname>
+</author>
+<author>
+<fname>Vaidyanathan</fname>
+<lname>Nagarajan</lname>
+</author>
+<year>2003</year>
+<price>49.99</price>
+</book>
+<book category="web" cover="paperback">
+<title lang="en">Learning XML</title>
+<publisher>Wiley</publisher>
+<author>
+<fname>Erik T.</fname>
+<lname>Ray</lname>
+</author>
+<year>2003</year>
+<price>39.95</price>
+</book>
+<book category="web" cover="paperback">
+<title lang="en">Learning XML</title>
+<publisher>Wiley</publisher>
+<author>
+<fname>Lars</fname>
+<lname>Lasrsson</lname>
+</author>
+<year>2003</year>
+<price>33.75</price>
+</book>
+<book category="web" cover="paperback">
+<title lang="en">Learning XML</title>
+<publisher>Wiley</publisher>
+<author>
+<fname>Karl</fname>
+<lname>Karlsson</lname>
+</author>
+<year>2003</year>
+<price>32.15</price>
+</book>
+<book category="comedy" cover="paperback">
+<title lang="et">Talve</title>
+<publisher>Valgus</publisher>
+<author>
+<fname>Oskar</fname>
+<lname>Luts</lname>
+</author>
+<year>2018</year>
+<price>29.45</price>
+</book>
+<book category="comedy" cover="paperback">
+<title lang="et">Kevade</title>
+<publisher>Valgus</publisher>
+<author>
+<fname>Oskar</fname>
+<lname>Luts</lname>
+</author>
+<year>2009</year>
+<price>38.12</price>
+</book>
+<book category="serious" cover="paperback">
+<title lang="et">Tõde ja Õigus</title>
+<publisher>Eesti Raamat</publisher>
+<author>
+<fname>Anton H.</fname>
+<lname>Tammsaare</lname>
+</author>
+<year>2014</year>
+<price>73.44</price>
+</book>
+</bookstore>
